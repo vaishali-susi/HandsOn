@@ -1,13 +1,13 @@
-let a = fetch('https://meme-api.herokuapp.com/gimme');
-let b = a.then(function(response){
+ let a = fetch('https://meme-api.herokuapp.com/gimme');
+ let b = a.then(function(response){
     return response.json();
-});
+ }); 
  b.then(function(data){
-console.log(data);
-fn(data);
-})
+ console.log(data);
+ fn(data);
+ })
 
-function fn(data){
+ function fn(data){
     let h1 = document.createElement('h2');
     h1.innerText = `Post_Link : ${data.postLink}`;
     let h2 = document.createElement('h2');
