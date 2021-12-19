@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #shape{
+            background-color: aqua;
+            height: 500px;
+            width: 800px;
+            position: relative;
+            margin: 10px;
+        }
+        #circle{
+            background-color: yellowgreen;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var poe = 0;
+ function move(){
+     var circle = document.getElementById("circle");
+     
+     var anim = setInterval(animate,5);
+ }
+ function animate(){
+     if(poe == 370){
+         clearInterval(anim);
+     }else{
+        poe++;
+     circle.style.top = poe + "px";
+     circle.style.left = poe + "px"
+     }
+    
+ }
+    </script>
+    <button onclick="move()">click me</button>
+    <div id="shape">
+        <div id="circle"></div>
+    </div>
+    
+</body>
+</html>
