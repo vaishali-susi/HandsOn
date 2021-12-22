@@ -3,7 +3,7 @@ let addbtn = document.getElementById('add');
 let input = document.getElementById('input');
 
 addbtn.addEventListener('click',function(){
-
+    
 })
 
 let display = function(){
